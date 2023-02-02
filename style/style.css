@@ -6,8 +6,8 @@
 
 :root{
     --title :#E53170;
-    --text : #0F0E17;
-    --bgcolor: #FFFFFF;
+    --black : #0F0E17;
+    --white: #FFFFFF;
 }
 
 .clearfix::after{
@@ -16,13 +16,13 @@
     clear: both;
 }
 
-/*.debug{
-    border: 1px solid white;
-}*/
+.debug{
+    border: 1px solid var(--black);
+}
 
 body{
-    background-color: var(--bgcolor);
-    color: var(--text);
+    background-color: var(--white);
+    color: var(--black);
     font-family: 'Fredoka', sans-serif;
     text-align: center;
 }
@@ -36,19 +36,31 @@ body{
 header.container{
     margin-top: 8rem;
 }
-h1, h2{
+h1{
     color: var(--title);
 }
 
+.text{
+    font-size: 19px;
+    padding-left: px;
+    padding-right: px;
+}
+
 h3{
-    color: var(--sub-title);
+    color: var(--white);
 }
 
 .col{
     float: left;
     width: calc(100% / 3);
     text-align: center;
-    padding: 0.8rem;
+    padding: 0.6rem;
+}
+
+.badge{
+    background-color: var(--black);
+    color: var(--white);
+    height: 93px;
 }
 
 img{
@@ -59,3 +71,4 @@ img{
 section{
     margin-top: 2rem;
 }
+
