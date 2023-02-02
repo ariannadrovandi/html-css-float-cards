@@ -8,6 +8,7 @@
     --title :#E53170;
     --black : #0F0E17;
     --white: #FFFFFF;
+    --email: #87cefa;
 }
 
 .clearfix::after{
@@ -16,9 +17,9 @@
     clear: both;
 }
 
-.debug{
+/*.debug{
     border: 1px solid var(--black);
-}
+}*/
 
 body{
     background-color: var(--white);
@@ -38,6 +39,7 @@ header.container{
 }
 h1{
     color: var(--title);
+    font-size: 40px;
 }
 
 .text{
@@ -48,12 +50,19 @@ h1{
 
 h3{
     color: var(--white);
+    padding: 5px;
+}
+
+h3, .badge p{
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 .col{
     float: left;
     width: calc(100% / 3);
     text-align: center;
+    
     padding: 0.6rem;
 }
 
@@ -61,6 +70,7 @@ h3{
     background-color: var(--black);
     color: var(--white);
     height: 93px;
+    text-align: left;
 }
 
 img{
@@ -72,3 +82,11 @@ section{
     margin-top: 2rem;
 }
 
+.info{
+    padding-left: 100px;
+    padding-top: 4px;
+}
+
+.email{
+    color: var(--email)
+}
